@@ -1,0 +1,23 @@
+{
+  "name": "jscdn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ncc build src/action.js -o dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samifiaz/jscdn.git"
+  },
+  "author": "Sami Fiaz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samifiaz/jscdn/issues"
+  },
+  "homepage": "https://github.com/samifiaz/jscdn#readme",
+  "dependencies": {
+    "@vercel/ncc": "^0.28.6"
+  }
+}

@@ -1,0 +1,19 @@
+name: "JS CDN"
+description: "CDN using AWS S3 and github actions."
+author: "Sami Fiaz"
+
+inputs:
+  GITHUB_TOKEN:
+    description: "Github token"
+    required: true
+  github_repo_url:
+    description: "Your github repository <org>/<repo> e.g Foxy/foxy-elements"
+    required: true
+    default: "Foxy/foxy-elements"
+  npm_build_command:
+    description: "npm command that would build your script after running npm install. e.g npm run prepack"
+    default: "npm run prepack"
+
+runs:
+  using: "node12"
+  main: "dist/index.js"
