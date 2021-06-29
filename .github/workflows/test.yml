@@ -17,7 +17,7 @@ jobs:
       - name: Checkout Foxy/foxy-elements
         uses: actions/checkout@v2
         with:
-          repository: ${{ inputs.github_repo_url  }}
+          repository: Foxy/foxy-elements
           path: foxy-elements
 
       - name: Run NPM install & Prepack
