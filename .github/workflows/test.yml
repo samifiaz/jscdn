@@ -13,14 +13,18 @@ jobs:
         with:
           repository: Foxy/foxy-elements
           path: foxy-elements
+        run: ls
       - uses: actions/checkout@v2
+        run: ls
       - uses: ./
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           github_repo_url: "Foxy/foxy-elements"
           npm_build_command: "npm run prepack"
       - name: Run NPM install & Prepack
-        run: ls
+        run: |
+          cd ..
+          ls
       # - name: Checkout Foxy/foxy-elements
       #   uses: actions/checkout@v2
       #   with:
