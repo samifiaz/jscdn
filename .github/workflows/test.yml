@@ -13,9 +13,9 @@ jobs:
         with:
           repository: Foxy/foxy-elements
           path: foxy-elements
+      - name: ls elements
         run: ls
       - uses: actions/checkout@v2
-        run: ls
       - uses: ./
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
