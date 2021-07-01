@@ -14,6 +14,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           github_repo_url: "Foxy/foxy-elements"
           npm_build_command: "npm run prepack"
+      - name: Run NPM install & Prepack
         run: ls
       # - name: Checkout Foxy/foxy-elements
       #   uses: actions/checkout@v2
