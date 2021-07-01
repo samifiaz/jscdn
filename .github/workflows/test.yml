@@ -8,6 +8,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - name: Taha action checkout
       - uses: actions/checkout@v2
       - uses: ./
         with:
@@ -18,7 +19,7 @@ jobs:
         run: |
           cd ..
           ls
-            - name: Checkout Foxy/foxy-elements
+      - name: Checkout Foxy/foxy-elements
       - uses: actions/checkout@v2
         with:
           repository: Foxy/foxy-elements
