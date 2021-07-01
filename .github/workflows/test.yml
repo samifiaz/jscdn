@@ -8,13 +8,6 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Foxy/foxy-elements
-        uses: actions/checkout@v2
-        with:
-          repository: Foxy/foxy-elements
-          path: foxy-elements
-      - name: ls elements
-        run: ls
       - uses: actions/checkout@v2
       - uses: ./
         with:
@@ -25,6 +18,13 @@ jobs:
         run: |
           cd ..
           ls
+            - name: Checkout Foxy/foxy-elements
+      -  uses: actions/checkout@v2
+        with:
+          repository: Foxy/foxy-elements
+          path: foxy-elements
+      - name: ls elements
+        run: ls
       # - name: Checkout Foxy/foxy-elements
       #   uses: actions/checkout@v2
       #   with:
