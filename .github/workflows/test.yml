@@ -10,10 +10,10 @@ jobs:
     steps:
       -  uses: actions/checkout@v2
       -  uses: ./
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          github_repo_url: "Foxy/foxy-elements"
-          npm_build_command: "npm run prepack"
+          with:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            github_repo_url: "Foxy/foxy-elements"
+            npm_build_command: "npm run prepack"
       - name: Run NPM install & Prepack
         run: |
           cd ..
