@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: Foxy/foxy-elements
-          # path: foxy-elements
+          path: foxy-elements
       - uses: actions/checkout@v2
       - uses: ./
         with:
