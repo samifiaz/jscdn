@@ -9,8 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Taha action checkout
-      - uses: actions/checkout@v2
-      - uses: ./
+        uses: actions/checkout@v2
+        uses: ./
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           github_repo_url: "Foxy/foxy-elements"
@@ -20,7 +20,7 @@ jobs:
           cd ..
           ls
       - name: Checkout Foxy/foxy-elements
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
         with:
           repository: Foxy/foxy-elements
           path: foxy-elements
